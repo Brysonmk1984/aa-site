@@ -29,7 +29,7 @@
   }
 
   export let data;
-  //export const armies = data.armies;
+  export const armies = data.armies;
 
   async function handleUserUpdateCheck({ email, email_verified : emailVerified, sub }){
     console.log("here")
@@ -55,13 +55,13 @@
   <h1>Armies of Avalore</h1>
   <p>An incremental strategy game set in a realm of medieval fantasy</p>
   <p>Battle for territory and control the Avalore! </p>
-  <!-- <ul>
+  <ul>
     { #if !!armies && armies.length }
       {#each armies as army}
         <li>{army.name}</li>
       {/each}
     { /if }
-  </ul> -->
+  </ul>
 
 
   {#if $isAuthenticated}
