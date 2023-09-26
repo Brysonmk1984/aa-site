@@ -1,4 +1,6 @@
 // See https://kit.svelte.dev/docs/types#app
+
+
 // for information about these interfaces
 declare global {
 	namespace App {
@@ -7,6 +9,16 @@ declare global {
 		// interface PageData {}
 		// interface Platform {}
 	}
+
+
+	interface User {
+		email : string;
+		emailVerified : string;
+		sub : string;
+	}
+
 }
+
+
 
 export {};

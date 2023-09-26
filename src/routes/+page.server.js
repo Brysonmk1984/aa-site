@@ -8,9 +8,9 @@ export async function load(ctx){
 
   try {
     const response = await fetch(apiEndpoint);
-    const armies = await response.json();
+   // const armies = await response.json();
   
-    return { armies };
+   // return { armies :  null};
   } catch (error) {
     console.error(error);
     
@@ -23,5 +23,4 @@ export async function load(ctx){
     }
   };
 }
-
 
