@@ -52,7 +52,6 @@
 </script>
 
 <section>
-  <h1>Armies of Avalore</h1>
   <p>An incremental strategy game set in a realm of medieval fantasy</p>
   <p>Battle for territory and control the Avalore! </p>
   <ul>
@@ -77,19 +76,4 @@
       <button on:click={login}>Login</button>
   {/if}
 </section>
-
-<style>
-  :global(body) {
-    background-color: black;
-  }
-  h1 {
-    color: darkgray;
-  }
-  p {
-    color: darkred;
-  }
-  li{
-    color: antiquewhite;
-  }
-</style>
 
