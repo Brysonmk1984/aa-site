@@ -2,7 +2,8 @@
   import { onMount } from 'svelte';
   import auth from '$lib/services/auth';
   import { isAuthenticated, user } from '$lib/stores/auth';
- import { findOrCreateUser } from '$lib/services/user.js';
+  import { findOrCreateUser } from '$lib/services/user.js';
+ import { fullUser } from '$lib/stores/profile.js';
 
 
   /**
@@ -32,12 +33,12 @@
   export const armies = data.armies;
 
   async function handleUserUpdateCheck({ email, email_verified : emailVerified, sub }){
-    console.log("here")
 
     try{
       let user = await findOrCreateUser({ email, email_verified : emailVerified, auth0_sub : sub });
-      console.log({user});
+      console.log('found user, updating fullUser', user);
 
+      fullUser.set(user)
     } catch (e){
       console.error(e)
     }

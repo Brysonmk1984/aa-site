@@ -18,7 +18,6 @@ export const findOrCreateUser = async (user) => {
   });
 
   try{
-    console.log(result);
     const data = await result.json();
     return data;
   } catch(e){

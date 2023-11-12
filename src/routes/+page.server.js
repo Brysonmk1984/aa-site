@@ -9,7 +9,7 @@ export async function load(ctx){
   try {
     const response = await fetch(apiEndpoint);
    const armies = await response.json();
-  
+
    return { armies };
   } catch (error) {
     console.error(error);
