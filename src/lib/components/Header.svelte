@@ -32,11 +32,17 @@
 				<a href="/">Home</a>
 			</li>
 
+			<li aria-current={$page.url.pathname.startsWith('/buy') ? 'buy' : undefined}>
+				<a href="/buy">Buy</a>
+			</li>
+
 			{#if user}
-				<li aria-current={$page.url.pathname.startsWith('/profile') ? 'page' : undefined}>
-					<a href="/profile">Profile</a>
+				<li aria-current={$page.url.pathname.startsWith('/nation') ? 'page' : undefined}>
+					<a href="/nation">Nation</a>
 				</li>
 			{/if}
+
+			
 			
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">

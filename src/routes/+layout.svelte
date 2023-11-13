@@ -14,6 +14,7 @@
 	<footer>
 		<p>&copy; Armies of Avalore 2023</p>
 		<a href="/">Home</a>
+		<a href="/buy">Buy</a>
 		<a href="/nation">Nation</a>
 	</footer>
 </div>
@@ -26,6 +27,9 @@
   p {
     color: darkred;
   }
+	footer {
+		text-align: center;
+	}
   
 
   section {

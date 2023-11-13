@@ -60,17 +60,18 @@
 
 <section>
 	{#if Object.keys(user).length}
-	<h1>{user.email}</h1>
-	<h2>{nation?.name}</h2>
+	<h1>{nation?.name}</h1>
 	{/if}
 	
-	<div class="army-list">
-		<ul>
-			{#each armies as army}
-				<li>{army.count} {army.army_name}</li>
-			{/each}
-		</ul>
-	
+	<div class="army-dashboard">
+		<div class="army-list">
+			<ul>
+				{#each armies as army}
+					<li>{army.count} {army.army_name}</li>
+				{/each}
+			</ul>
+		</div>
+
 	</div>
 
 </section>
@@ -78,7 +79,7 @@
 
 
 <style>
-	.army-list{
+	.army-dashboard{
 		text-align:center;
 	}
 </style>
